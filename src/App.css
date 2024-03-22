@@ -28,6 +28,16 @@
   color: #61dafb;
 }
 
+#integrated-terminal {
+  position: relative;
+  z-index: 1;
+}
+
+/* Adjust this selector based on how you can target the Wormhole Bridge */
+div.WormholeBridge {
+  position: relative;
+  z-index: 2;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
