@@ -4,6 +4,7 @@ import './App.css';
 import { SwapWidget } from '@uniswap/widgets';
 import '@uniswap/widgets/fonts.css';
 import WormholeBridge from '@wormhole-foundation/wormhole-connect';
+import ThorSwapComponent from './components/ThorSwapComponent';
 
 function App() {
 
