@@ -5,7 +5,7 @@ const MetaMaskWalletComponent = () => {
     const [client, setClient] = useState(null);
     const [balance, setBalance] = useState('0');
 
-    const connectChains = [Chain.Ethereum, Chain.Bitcoin, Chain.THORChain]
+    const connectChains = [Chain.Ethereum]
 
     // Instantiate and configure the SwapKit client
     useEffect(() => {
@@ -41,7 +41,10 @@ const MetaMaskWalletComponent = () => {
             const wallets = await Promise.all(connectChains.map(client.getWalletByChain));
 
             console.log(wallets)
+            const ethBalance = Number(wallets[0].balance[0].bigIntValue)/1000000000000000000;
+            console.log(Number(wallets[0].balance[0].bigIntValue)/1000000000000000000)
             // [{ balance: AssetAmount[]; address: string; walletType: WalletOption }]
+            setBalance(ethBalance);
         } catch (error) {
             console.error('Failed to fetch wallet balance:', error);
         }
