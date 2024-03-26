@@ -1,5 +1,4 @@
 import React, { useEffect} from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { SwapWidget } from '@uniswap/widgets';
 import '@uniswap/widgets/fonts.css';
@@ -24,6 +23,7 @@ function App() {
           integratedTargetId: "integrated-terminal",
           endpoint: "https://api.mainnet-beta.solana.com",
           strictTokenList: false,
+          containerstyles: {},
           formProps: {
             initialInputMint: "So11111111111111111111111111111111111111112",
             initialOutputMint: "GCVS6j6Y4JTF1x58dVWwDduzP94SMKCkhMQkQdMf1E4X",
@@ -44,7 +44,7 @@ function App() {
         <header className="App-header">
           <div style={{ display: 'flex', justifyContent: 'space-around', width: '80%' }}>
             <div className="Uniswap" style={{ flex: 1 }}>
-              <SwapWidget/>
+              <SwapWidget defaultOutputTokenAddress="0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"/>
             </div>
             <div style={{ flex: 1 }}>
               <WormholeBridge config={{"env":"mainnet","mode":"dark","bridgeDefaults":{"fromNetwork":"ethereum","toNetwork":"solana","token":"USDCeth"},"pageHeader":"","showHamburgerMenu":false}} />
