@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@0xsquid/widget": "^1.7.6",
     "@babel/plugin-transform-classes": "^7.24.1",
     "@swapkit/core": "^1.0.0-rc.117",
     "@swapkit/sdk": "^1.0.0-rc.136",
