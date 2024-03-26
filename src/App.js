@@ -5,6 +5,10 @@ import { SwapWidget } from '@uniswap/widgets';
 import '@uniswap/widgets/fonts.css';
 import WormholeBridge from '@wormhole-foundation/wormhole-connect';
 
+import HeaderWithTextAndImage from './components/HeaderWithTextAndImage';
+
+//import ThorSwapComponent from './components/ThorSwapComponent';
+
 function App() {
 
   useEffect(() => {
@@ -18,7 +22,12 @@ function App() {
         window.Jupiter.init({
           displayMode: "integrated",
           integratedTargetId: "integrated-terminal",
-          endpoint: "https://solana-api.projectserum.com",
+          endpoint: "https://api.mainnet-beta.solana.com",
+          strictTokenList: false,
+          formProps: {
+            initialInputMint: "So11111111111111111111111111111111111111112",
+            initialOutputMint: "GCVS6j6Y4JTF1x58dVWwDduzP94SMKCkhMQkQdMf1E4X",
+          },
         });
       };
     };
@@ -31,22 +40,19 @@ function App() {
 
   return (
       <div className="App">
+        <HeaderWithTextAndImage />
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>Edit <code>src/App.js</code> and save to reload.</p>
           <div style={{ display: 'flex', justifyContent: 'space-around', width: '80%' }}>
             <div className="Uniswap" style={{ flex: 1 }}>
-              <SwapWidget width={500}/>
+              <SwapWidget/>
             </div>
             <div style={{ flex: 1 }}>
-              <WormholeBridge config={{"env":"mainnet","mode":"dark","pageHeader":"","showHamburgerMenu":false}} />
+              <WormholeBridge config={{"env":"mainnet","mode":"dark","bridgeDefaults":{"fromNetwork":"ethereum","toNetwork":"solana","token":"USDCeth"},"pageHeader":"","showHamburgerMenu":false}} />
             </div>
             <div id="integrated-terminal" style={{ flex: 1 }}></div>
           </div>
-          <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-            Learn React
-          </a>
         </header>
+        <p>This site and meme coin are parody and satire and not associated with INFOWARS or Alex Jones.</p>
       </div>
   );
 }
