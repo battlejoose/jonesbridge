@@ -21,7 +21,7 @@ function App() {
         window.Jupiter.init({
           displayMode: "integrated",
           integratedTargetId: "integrated-terminal",
-          endpoint: "https://api.mainnet-beta.solana.com",
+          endpoint: "https://mainnet.helius-rpc.com/?api-key=805bb8c7-07ee-49cd-8831-a46e48f259f2",
           strictTokenList: false,
           containerstyles: {},
           formProps: {
