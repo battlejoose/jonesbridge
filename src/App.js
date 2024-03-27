@@ -43,14 +43,14 @@ function App() {
   return (
       <div className="App">
         <HeaderWithTextAndImage />
-        <header className="App-header">
+        <p>Battle the globalists! Join the fight for Free Speech and Freedom on the blockchain!</p>
+          <p>Solana: GCVS6j6Y4JTF1x58dVWwDduzP94SMKCkhMQkQdMf1E4X</p>
           <div className="widgets-container">
             <div id="integrated-terminal" className="widget-wrapper"></div>
             <div className="widget-wrapper">
               <DextoolsWidget />
             </div>
-          </div>
-        </header>
+        </div>
         <p>This site and meme coin are parody and satire and not associated with INFOWARS or Alex Jones. This token is simply a meme coin with no intrinsic value or expectation of financial return.</p>
       </div>
   );

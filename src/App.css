@@ -47,17 +47,34 @@ div.WormholeBridge {
   }
 }
 
+
 .widgets-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
+  justify-content: space-around; /* This will space out the child elements equally */
+  align-items: center; /* This will center the items vertically */
+  width: 100%;
   margin: 0 auto;
+  background-image: url('./declaration.png'); /* Adjust the path as necessary */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
 }
 
 .widget-wrapper {
-  flex: 1;
+  flex: 1; /* Allows the widget wrappers to grow and fill the container */
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 20px; /* Adds some space between the widgets */
+  height: 100%; /* Ensures that the widget wrapper fills the height of its container */
 }
+
+/* You might need to adjust the height explicitly if "100%" does not work as expected */
+.jupiter-widget, .dextools-widget {
+  width: 100%; /* Ensures the widgets fill their wrappers */
+  height: auto; /* Adjust based on the widget's content or set a fixed height */
+}
+
+
