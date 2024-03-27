@@ -5,6 +5,8 @@ import '@uniswap/widgets/fonts.css';
 import WormholeBridge from '@wormhole-foundation/wormhole-connect';
 
 import HeaderWithTextAndImage from './components/HeaderWithTextAndImage';
+import DextoolsWidget from './components/DextoolsWidget'; // Adjust the path according to your file structure
+
 
 //import ThorSwapComponent from './components/ThorSwapComponent';
 
@@ -42,17 +44,9 @@ function App() {
       <div className="App">
         <HeaderWithTextAndImage />
         <header className="App-header">
-          <div style={{ display: 'flex', justifyContent: 'space-around', width: '80%' }}>
-            <div className="Uniswap" style={{ flex: 1 }}>
-              <SwapWidget defaultOutputTokenAddress="0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"/>
-            </div>
-            <div style={{ flex: 1 }}>
-              <WormholeBridge config={{"env":"mainnet","mode":"dark","bridgeDefaults":{"fromNetwork":"ethereum","toNetwork":"solana","token":"USDCeth"},"pageHeader":"","showHamburgerMenu":false}} />
-            </div>
-            <div id="integrated-terminal" style={{ flex: 1 }}></div>
-          </div>
+          <DextoolsWidget />
         </header>
-        <p>This site and meme coin are parody and satire and not associated with INFOWARS or Alex Jones.</p>
+        <p>This site and meme coin are parody and satire and not associated with INFOWARS or Alex Jones. This token is simply a meme coin with no intrinsic value or expectation of financial return.</p>
       </div>
   );
 }
