@@ -44,7 +44,12 @@ function App() {
       <div className="App">
         <HeaderWithTextAndImage />
         <header className="App-header">
-          <DextoolsWidget />
+          <div className="widgets-container">
+            <div id="integrated-terminal" className="widget-wrapper"></div>
+            <div className="widget-wrapper">
+              <DextoolsWidget />
+            </div>
+          </div>
         </header>
         <p>This site and meme coin are parody and satire and not associated with INFOWARS or Alex Jones. This token is simply a meme coin with no intrinsic value or expectation of financial return.</p>
       </div>

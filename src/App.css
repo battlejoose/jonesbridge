@@ -46,3 +46,18 @@ div.WormholeBridge {
     transform: rotate(360deg);
   }
 }
+
+.widgets-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.widget-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
