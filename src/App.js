@@ -45,7 +45,7 @@ function App() {
         <HeaderWithTextAndImage />
         <p>Battle the globalists! Join the fight for Free Speech and Freedom on the blockchain!</p>
         <p>Solana: GCVS6j6Y4JTF1x58dVWwDduzP94SMKCkhMQkQdMf1E4X</p>
-        <a href="https://t.me/infowarsonsol" target="_blank" rel="noopener noreferrer">Join our Telegram</a>
+        <a href="https://t.me/infowarsonsol" target="_blank" rel="noopener noreferrer">Join our Telegram (Community Takeover)</a>
         <div className="widgets-container">
             <div id="integrated-terminal" className="widget-wrapper"></div>
             <div className="widget-wrapper">
