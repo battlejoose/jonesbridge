@@ -2,10 +2,10 @@
     display: flex;
     justify-content: center;
     align-items: flex-end; /* Align the text overlay to the bottom */
-    background-image: url('./frogsJonesWide.png'); /* Adjust the path as needed */
+    background-image: url('./bannerflagReady.jpg'); /* Adjust the path as needed */
     background-size: cover;
     background-position: center;
-    height: 300px; /* Adjust based on your needs */
+    height: 400px; /* Adjust based on your needs */
     text-align: center;
     padding: 20px; /* Padding to ensure text does not touch the edges */
 }
