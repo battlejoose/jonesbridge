@@ -4,9 +4,9 @@ import './HeaderWithTextAndImage.css'; // Assuming you'll style your component w
 const HeaderWithTextAndImage = () => {
     return (
         <div className="header-container">
-            <div className="text-overlay">
-                <h1>THESE... ARE THE INFOWARS!!!</h1>
-                <p>Make Amphibians Straight Again</p>
+            <div className="text-heading-container">
+                <h1 className="flag-heading">MAKE AMPHIBIANS STRAIGHT AGAIN</h1>
+                <p className="flag-subheading">Solana: GCVS6j6Y4JTF1x58dVWwDduzP94SMKCkhMQkQdMf1E4X</p>
             </div>
         </div>
     );

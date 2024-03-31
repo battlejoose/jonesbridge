@@ -77,4 +77,58 @@ div.WormholeBridge {
   height: auto; /* Adjust based on the widget's content or set a fixed height */
 }
 
+/* Updated Container for the Rango widget with "rango" prefix */
+.rango-widget-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./alexbridgeReady.jpg'); /* Update this path */
+  background-size: cover;
+  background-position: center;
+  margin-top: 20px; /* Adjust as needed */
+  padding: 20px; /* Adjust as needed */
+}
+
+/* Apply the .elementor-heading-title styles to your existing title class or create a new one */
+.custom-heading {
+  color: azure; /* Update this variable or replace it with a specific color code */
+  font-family: "Kanit", Sans-serif;
+  font-size: 65px; /* Adjust if needed */
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 0.889em;
+  letter-spacing: 1px;
+  text-shadow: 3px 3px 0px rgba(155, 155, 155, 0.3);
+  margin: 0 auto; /* Center the heading */
+}
+
+/* Create a new class for the subheading with adjusted styles */
+.custom-subheading {
+  color: azure; /* Update this variable or replace it with a specific color code */
+  font-family: "Kanit", Sans-serif;
+  font-size: 28px; /* Smaller font size */
+  font-weight: 700; /* Slightly lighter weight */
+  text-transform: uppercase;
+  line-height: 1em;
+  letter-spacing: 0.8px;
+  text-shadow: 2px 2px 0px rgba(155, 155, 155, 0.3);
+  margin: 20px auto; /* Adjust spacing as needed */
+}
+
+.custom-textLabel {
+
+}
+
+/* Update your rango widget wrapper styles for proper alignment */
+.rango-widget-background .rango-widget-wrapper {
+  display: flex;
+  flex-direction: column; /* Stack the elements vertically */
+  align-items: center; /* Center align the children */
+  justify-content: center; /* Center vertically */
+  width: 100%;
+  max-width: 600px; /* Adjust to the max width you want for the widget and text */
+}
+
+
+
 
