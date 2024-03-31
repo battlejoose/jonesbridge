@@ -106,7 +106,7 @@ div.WormholeBridge {
 .custom-subheading {
   color: azure; /* Update this variable or replace it with a specific color code */
   font-family: "Kanit", Sans-serif;
-  font-size: 48px; /* Smaller font size */
+  font-size: 28px; /* Smaller font size */
   font-weight: 700; /* Slightly lighter weight */
   text-transform: uppercase;
   line-height: 1em;
