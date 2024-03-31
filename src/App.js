@@ -5,10 +5,11 @@ import '@uniswap/widgets/fonts.css';
 import WormholeBridge from '@wormhole-foundation/wormhole-connect';
 import { Widget, WidgetConfig } from "@rango-dev/widget-embedded";
 
-
 import HeaderWithTextAndImage from './components/HeaderWithTextAndImage';
 import DextoolsWidget from './components/DextoolsWidget'; // Adjust the path according to your file structure
 
+import telegramLogo from './Telegram_logo.svg';
+import twitterLogo from './X_logo.svg';
 
 //import ThorSwapComponent from './components/ThorSwapComponent';
 
@@ -125,10 +126,14 @@ function App() {
   return (
       <div className="App">
           <HeaderWithTextAndImage />
-          <p>Battle the globalists! Join the fight for Free Speech and Freedom on the blockchain!</p>
-          <p>Solana: GCVS6j6Y4JTF1x58dVWwDduzP94SMKCkhMQkQdMf1E4X</p>
-          <a href="https://t.me/infowarsonsol" target="_blank" rel="noopener noreferrer">Join our Telegram (Community Takeover)</a>
-          <div className="widgets-container">
+          <div className="social-links">
+              <a href="https://twitter.com/INFOWARSmemeSol" target="_blank" rel="noopener noreferrer">
+                  <img src={twitterLogo} alt="Twitter" style={{ width: '30px', marginRight: '20px' }} />
+              </a>
+              <a href="https://t.me/infowarsonsol" target="_blank" rel="noopener noreferrer">
+                  <img src={telegramLogo} alt="Telegram" style={{ width: '30px', position: 'relative', top: '2px' }} />
+              </a>
+          </div>          <div className="widgets-container">
               <div id="integrated-terminal" className="widget-wrapper"></div>
               <div className="widget-wrapper">
                   <DextoolsWidget />
@@ -144,7 +149,7 @@ function App() {
                   <Widget config={config}/>
               </div>
           </div>
-          <p>This site and meme coin are parody and satire and not associated with INFOWARS or Alex Jones. This token is simply a meme coin with no intrinsic value or expectation of financial return.</p>
+          <p className="custom-textLabel">This site and meme coin are parody and satire and not associated with INFOWARS or Alex Jones. This token is simply a meme coin with no intrinsic value or expectation of financial return.</p>
       </div>
 
   );

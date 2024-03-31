@@ -115,6 +115,10 @@ div.WormholeBridge {
   margin: 20px auto; /* Adjust spacing as needed */
 }
 
+.custom-textLabel {
+
+}
+
 /* Update your rango widget wrapper styles for proper alignment */
 .rango-widget-background .rango-widget-wrapper {
   display: flex;
