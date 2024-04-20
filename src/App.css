@@ -58,7 +58,6 @@ div.WormholeBridge {
   background-size: cover;
   background-position: center;
   position: relative;
-  z-index: 1;
   min-height: 100vh;
 }
 

@@ -104,11 +104,13 @@ function App() {
 
       script.onload = () => {
         window.Jupiter.init({
-          displayMode: "integrated",
-          integratedTargetId: "integrated-terminal",
+          displayMode: "widget",
           endpoint: "https://mainnet.helius-rpc.com/?api-key=805bb8c7-07ee-49cd-8831-a46e48f259f2",
           strictTokenList: false,
-          containerstyles: {},
+          containerStyles: {
+              backgroundColor: '#D2B48C', // Keeps the container background invisible
+
+          },
           formProps: {
             initialInputMint: "So11111111111111111111111111111111111111112",
             initialOutputMint: "GCVS6j6Y4JTF1x58dVWwDduzP94SMKCkhMQkQdMf1E4X",
@@ -133,11 +135,12 @@ function App() {
               <a href="https://t.me/infowarsonsol" target="_blank" rel="noopener noreferrer">
                   <img src={telegramLogo} alt="Telegram" style={{ width: '30px', position: 'relative', top: '2px' }} />
               </a>
-          </div>          <div className="widgets-container">
-              <div id="integrated-terminal" className="widget-wrapper"></div>
-              <div className="widget-wrapper">
-                  <DextoolsWidget />
-              </div>
+          </div>
+          <div className="widgets-container">
+
+
+                  <DextoolsWidget/>
+
           </div>
           {/* Updated section for Rango widget with custom background and "rango" prefixed class names */}
           <div className="rango-widget-background">
