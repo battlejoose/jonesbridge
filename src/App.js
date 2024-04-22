@@ -127,6 +127,7 @@ function App() {
 
   return (
       <div className="App">
+          <body>
           <HeaderWithTextAndImage />
           <div className="social-links">
               <a href="https://twitter.com/INFOWARSmemeSol" target="_blank" rel="noopener noreferrer">
@@ -137,12 +138,8 @@ function App() {
               </a>
           </div>
           <div className="widgets-container">
-
-
-                  <DextoolsWidget/>
-
+              <DextoolsWidget/>
           </div>
-          {/* Updated section for Rango widget with custom background and "rango" prefixed class names */}
           <div className="rango-widget-background">
               <div className="rango-widget-wrapper">
                   <h2 className="custom-heading">Cross chain Native swaps</h2>
@@ -152,6 +149,7 @@ function App() {
                   <Widget config={config}/>
               </div>
           </div>
+          </body>
           <p className="custom-textLabel">This site and meme coin are parody and satire and not associated with INFOWARS or Alex Jones. This token is simply a meme coin with no intrinsic value or expectation of financial return.</p>
       </div>
 
