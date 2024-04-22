@@ -142,10 +142,6 @@ function App() {
           </div>
           <div className="rango-widget-background">
               <div className="rango-widget-wrapper">
-                  <h2 className="custom-heading">Cross chain Native swaps</h2>
-                  <p className="custom-subheading">Aggregate the best swap price through multiple bridges</p>
-              </div>
-              <div className="rango-widget-wrapper">
                   <Widget config={config}/>
               </div>
           </div>

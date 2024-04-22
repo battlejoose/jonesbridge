@@ -30,7 +30,7 @@ const DextoolsWidget = () => {
             <iframe
                 id="dextools-widget"
                 title="DEXTools Trading Chart"
-                width="550"
+                width="400"
                 height="400"
                 src="https://www.dextools.io/widget-chart/en/solana/pe-light/F7SjY53cr4vSJu3PboTFh3cQrkHqTJoxfrNf5wJPLApV?theme=dark&chartType=1&chartResolution=30&drawingToolbars=false"
                 style={{ border: 0 }}

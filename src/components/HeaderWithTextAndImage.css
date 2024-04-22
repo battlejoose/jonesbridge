@@ -42,6 +42,8 @@
 
 /* Create a new class for the subheading with adjusted styles */
 .flag-subheading {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
     color: azure; /* Update this variable or replace it with a specific color code */
     font-family: "Kanit", Sans-serif;
     font-size: 18px; /* Smaller font size */
