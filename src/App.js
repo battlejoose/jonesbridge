@@ -105,7 +105,7 @@ function App() {
       script.onload = () => {
         window.Jupiter.init({
           displayMode: "widget",
-          endpoint: "https://mainnet.helius-rpc.com/?api-key=805bb8c7-07ee-49cd-8831-a46e48f259f2",
+          endpoint: "https://hardworking-fragrant-replica.solana-mainnet.quiknode.pro/5f783f9053aa7cf67cae238855896c9f0ca26f76/",
           strictTokenList: false,
           containerStyles: {
               backgroundColor: '#D2B48C', // Keeps the container background invisible
