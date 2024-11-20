@@ -130,7 +130,7 @@ function App() {
           <body>
           <HeaderWithTextAndImage />
           <div className="social-links">
-              <a href="https://twitter.com/INFOWARSmemeSol" target="_blank" rel="noopener noreferrer">
+              <a href="https://x.com/INFOWARSONSOL" target="_blank" rel="noopener noreferrer">
                   <img src={twitterLogo} alt="Twitter" style={{ width: '30px', marginRight: '20px' }} />
               </a>
               <a href="https://t.me/infowarsonsol" target="_blank" rel="noopener noreferrer">
